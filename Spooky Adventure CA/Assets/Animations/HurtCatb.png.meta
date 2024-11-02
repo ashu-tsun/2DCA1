@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4bab570a5ba2d7b4da051075c18ea30b
+guid: c940a4932c0718347ba3600f6161852a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 420
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,211 +110,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mossy - FloatingPlatforms_0
+      name: HurtCatb_0
       rect:
         serializedVersion: 2
-        x: 115
-        y: 1679
-        width: 258
-        height: 319
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03ba6fdc0b2a2094b92ca2f9fc61337c
-      internalID: 1567627728
+      spriteID: f068605451e5e284b87a50871acb56b8
+      internalID: 1797664240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mossy - FloatingPlatforms_1
+      name: HurtCatb_1
       rect:
         serializedVersion: 2
-        x: 366
-        y: 1826
-        width: 15
-        height: 16
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0db81ce7de8c7645b4cc19e44368baf
-      internalID: -108435469
+      spriteID: 66e732b8eef82044291ba4d369ac96c1
+      internalID: -33505604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mossy - FloatingPlatforms_2
+      name: HurtCatb_2
       rect:
         serializedVersion: 2
-        x: 478
-        y: 1561
-        width: 1050
-        height: 452
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ade60ce2608115e41b18cc3dd6da744d
-      internalID: -156949540
+      spriteID: 4e98c5add6af85c4e9de0c2d2ddab61a
+      internalID: -1100450515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mossy - FloatingPlatforms_3
+      name: HurtCatb_3
       rect:
         serializedVersion: 2
-        x: 1594
-        y: 1062
-        width: 449
-        height: 942
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9794e122b7cc66540be155a36aa3f4dd
-      internalID: -1508141608
+      spriteID: 2f3434d7eddd1c648af2c4f2e156eaab
+      internalID: -520491486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mossy - FloatingPlatforms_4
+      name: HurtCatb_4
       rect:
         serializedVersion: 2
-        x: 36
-        y: 1169
-        width: 7
-        height: 10
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82562ab484076ad42b2597e8534176c1
-      internalID: 311684991
+      spriteID: a094552d9593aa84393f32cbeee5001d
+      internalID: -152978574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mossy - FloatingPlatforms_5
+      name: HurtCatb_5
       rect:
         serializedVersion: 2
-        x: 47
-        y: 1137
-        width: 381
-        height: 370
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5832dfa9486f4fb419a03cbe8aa64630
-      internalID: 133154936
+      spriteID: 348391af8532c644eb0441cefc47993e
+      internalID: -1696011674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mossy - FloatingPlatforms_6
+      name: HurtCatb_6
       rect:
         serializedVersion: 2
-        x: 497
-        y: 1059
-        width: 1050
-        height: 452
+        x: 192
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07130ff844a97c44d9d8af8a8037e9f9
-      internalID: -1324397011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mossy - FloatingPlatforms_7
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 623
-        width: 284
-        height: 316
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e110688d2de02b4284414d36188f743
-      internalID: -207074928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mossy - FloatingPlatforms_8
-      rect:
-        serializedVersion: 2
-        x: 437
-        y: 502
-        width: 1562
-        height: 452
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2b838d101b81fe4abc5a65fc931398a
-      internalID: 1440059881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mossy - FloatingPlatforms_9
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 31
-        width: 2014
-        height: 452
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57b4a25a390e8ca4e958bd894aa492e1
-      internalID: 23504432
+      spriteID: 6e638ac02a5462f4096627211310f945
+      internalID: -1453702995
       vertices: []
       indices: 
       edges: []
@@ -330,16 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mossy - FloatingPlatforms_0: 1567627728
-      Mossy - FloatingPlatforms_1: -108435469
-      Mossy - FloatingPlatforms_2: -156949540
-      Mossy - FloatingPlatforms_3: -1508141608
-      Mossy - FloatingPlatforms_4: 311684991
-      Mossy - FloatingPlatforms_5: 133154936
-      Mossy - FloatingPlatforms_6: -1324397011
-      Mossy - FloatingPlatforms_7: -207074928
-      Mossy - FloatingPlatforms_8: 1440059881
-      Mossy - FloatingPlatforms_9: 23504432
+      HurtCatb_0: 1797664240
+      HurtCatb_1: -33505604
+      HurtCatb_2: -1100450515
+      HurtCatb_3: -520491486
+      HurtCatb_4: -152978574
+      HurtCatb_5: -1696011674
+      HurtCatb_6: -1453702995
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
