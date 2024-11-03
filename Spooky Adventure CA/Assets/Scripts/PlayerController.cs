@@ -11,9 +11,12 @@ public class PlayerController : MonoBehaviour
     private bool isHit = false;
     private int jumpCount = 0;
     private int lives = 3;
+    private bool isAlive = true;
     private Animator _animator;
 
     [SerializeField] private string detectionTag = "Ghost";
+    public GameObject Player;
+    public Transform SpawnPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -47,9 +50,15 @@ public class PlayerController : MonoBehaviour
             transform.localScale = Vector3.one;
         }
 
+        if(lives<=0)
+        {
+            Die();
+        }
+
         _animator.SetBool("Run",moveby != 0);
         _animator.SetBool("Grounded",isGrounded);
         _animator.SetBool("Hit",isHit);
+        
     }
 
     private void Jump()
@@ -91,4 +100,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void Die()
+    {
+        isAlive = false;
+        _animator.SetBool("Alive",isAlive);
+        LevelManager.manager.GameOver();
+        Destroy(gameObject);
+    }
 }
