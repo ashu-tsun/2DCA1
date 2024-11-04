@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private bool isHit = false;
     private int jumpCount = 0;
     private int lives = 3;
+    private int totalCrystals;
+    private int crystalsCollected;
     private bool isAlive = true;
     private Animator _animator;
 
@@ -23,7 +25,8 @@ public class PlayerController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
-
+        totalCrystals = GameObject.FindGameObjectsWithTag("Crystal").Length;
+        UIManager.Instance.setCrystalsCollected(0,totalCrystals);
     }
 
     // Update is called once per frame
@@ -70,6 +73,16 @@ public class PlayerController : MonoBehaviour
         jumpCount++;
     }
 
+        private void miniJump()
+    {
+        _rigidbody.velocity = Vector3.zero;
+       
+        _rigidbody.AddForce(new Vector2(0, Mathf.Sqrt(-1* Physics2D.gravity.y *JumpHeight)), ForceMode2D.Impulse);
+        _animator.SetTrigger("Jump");
+        isGrounded = false;
+        jumpCount++;
+    }
+
 
     private void OnCollisionEnter2D (Collision2D collision)
     {
@@ -88,6 +101,7 @@ public class PlayerController : MonoBehaviour
         {
             isHit = true;
             lives--;
+            miniJump();
             UIManager.Instance.updateLives(lives);
         }
     }
@@ -106,5 +120,11 @@ public class PlayerController : MonoBehaviour
         _animator.SetBool("Alive",isAlive);
         LevelManager.manager.GameOver();
         Destroy(gameObject);
+    }
+
+    public void crystalCollected()
+    {
+        crystalsCollected++;
+        UIManager.Instance.setCrystalsCollected(crystalsCollected,totalCrystals);
     }
 }

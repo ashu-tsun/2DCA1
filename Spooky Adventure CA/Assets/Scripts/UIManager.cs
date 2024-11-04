@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
 
-   [SerializeField] TMP_Text presentsText;
+   [SerializeField] TMP_Text crystalsText;
     [SerializeField] private Image[] Images;
 
     private static UIManager instance;
@@ -28,9 +28,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void setCollected(int numCollected, int total)
+    public void setCrystalsCollected(int numCollected, int total)
     {
-        //presentsText.text = numCollected.ToString() + "/"+total.ToString();
+        crystalsText.text = numCollected.ToString() + "/"+total.ToString();
     }
 
     public void updateLives(int numLives)

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7f2f2595243a49745be1d677e47cfa0f
+guid: c816b0ed65b99db46b8a258ffb5f341e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IdleCatb_0
+      name: cat2Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce28810ed445ca9408b863c1fc471391
-      internalID: -450849130
+      spriteID: 7bb8bd3467a5367408127bb5febd1146
+      internalID: -281343318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleCatb_1
+      name: cat2Idle_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a3dea2e984e0f6438d0a9fbb40f06c9
-      internalID: 1509309242
+      spriteID: 1e6ec6f07c57d5c4db4218aa0a567d7b
+      internalID: -2023120077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleCatb_2
+      name: cat2Idle_2
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9294befb20a725f4e84842c36ba65694
-      internalID: -150357673
+      spriteID: 9a8cf8f0bb0f3bd48a40516eabe58563
+      internalID: 1858007260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleCatb_3
+      name: cat2Idle_3
       rect:
         serializedVersion: 2
         x: 96
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cc78aae13ce68844aedb0d841c5495d
-      internalID: 1177831876
+      spriteID: 90e568d0be6bda248bbaecbfaf0d7a38
+      internalID: 1678025948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleCatb_4
+      name: cat2Idle_4
       rect:
         serializedVersion: 2
         x: 128
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4e2e999e23d1be4b94119b2612107d0
-      internalID: 1010062012
+      spriteID: 4b16c245160983344b0680cabab6e15a
+      internalID: 1610100762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleCatb_5
+      name: cat2Idle_5
       rect:
         serializedVersion: 2
         x: 160
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af5f808024d942845bf030650b99e8b7
-      internalID: 1960396273
+      spriteID: 61e3b9ffb485b084390ec435436d1e88
+      internalID: 1236478830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleCatb_6
+      name: cat2Idle_6
       rect:
         serializedVersion: 2
         x: 192
@@ -250,8 +250,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 923226fc51f61ae42957cdca4cb75210
-      internalID: -2060662226
+      spriteID: 3b00f4cae1692cc48adf93929780d9df
+      internalID: 796372160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat2Idle_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25efa489ffe9c3d4581f3ce352ea106b
+      internalID: -2136092959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat2Idle_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dada082bbbc57ff47a59e26ec54ae94e
+      internalID: -365416235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat2Idle_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d70ae5fb584b04e92bd2627c2e3cc3
+      internalID: 1821126619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat2Idle_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359893f4c78644c4dbe6df0e2fb7a64f
+      internalID: 1638732344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat2Idle_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a333dbc26879a8d4eb5500fe02079885
+      internalID: 403438258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat2Idle_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575e545ad96d1b747af86d20c38edeff
+      internalID: -1140920541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat2Idle_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4eddfb46491984b9905b73c9de24d5
+      internalID: -294309607
       vertices: []
       indices: 
       edges: []
@@ -267,13 +414,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IdleCatb_0: -450849130
-      IdleCatb_1: 1509309242
-      IdleCatb_2: -150357673
-      IdleCatb_3: 1177831876
-      IdleCatb_4: 1010062012
-      IdleCatb_5: 1960396273
-      IdleCatb_6: -2060662226
+      cat2Idle_0: -281343318
+      cat2Idle_1: -2023120077
+      cat2Idle_10: 1638732344
+      cat2Idle_11: 403438258
+      cat2Idle_12: -1140920541
+      cat2Idle_13: -294309607
+      cat2Idle_2: 1858007260
+      cat2Idle_3: 1678025948
+      cat2Idle_4: 1610100762
+      cat2Idle_5: 1236478830
+      cat2Idle_6: 796372160
+      cat2Idle_7: -2136092959
+      cat2Idle_8: -365416235
+      cat2Idle_9: 1821126619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
