@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager manager;
     public GameObject DeathScreen;
+    public GameObject WinScreen;
     
     private void Awake(){
         manager = this;
@@ -19,5 +20,9 @@ public class LevelManager : MonoBehaviour
     public void ReplayGame(){
         
         SceneManager.LoadScene(1);
+    }
+
+    public void WinGame(){
+        WinScreen.SetActive(true);
     }
 }

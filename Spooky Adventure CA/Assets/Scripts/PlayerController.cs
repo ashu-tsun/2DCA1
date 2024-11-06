@@ -93,17 +93,32 @@ public class PlayerController : MonoBehaviour
 
         }
 
+
     }
 
         private void OnTriggerEnter2D (Collider2D collision)
     {
-        if(collision.CompareTag(detectionTag) || collision.CompareTag("Harmful"))
+        if(collision.CompareTag("WinCollider") && crystalsCollected == totalCrystals)
+        {
+            Win();
+        }
+
+        else if(collision.CompareTag(detectionTag) || collision.CompareTag("Harmful"))
         {
             isHit = true;
             lives--;
             miniJump();
             UIManager.Instance.updateLives(lives);
         }
+
+        else if(collision.CompareTag("Larry"))
+        {
+            isHit = true;
+            lives-=3;
+            miniJump();
+            UIManager.Instance.updateLives(lives);
+        }
+        
     }
 
         private void OnTriggerExit2D (Collider2D collision)
@@ -126,5 +141,10 @@ public class PlayerController : MonoBehaviour
     {
         crystalsCollected++;
         UIManager.Instance.setCrystalsCollected(crystalsCollected,totalCrystals);
+    }
+
+    private void Win(){
+        LevelManager.manager.WinGame();
+        Destroy(gameObject);
     }
 }

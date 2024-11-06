@@ -16,13 +16,14 @@ public class NpcController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(playerIsClose)
+        {
+            hint.SetActive(true);
+        }
         
         if(Input.GetKeyDown(KeyCode.E) &&playerIsClose == true)
         {
-            if(hint.activeInHierarchy)
-            {
-                hint.SetActive(false);
-            }
+            hint.SetActive(false);
             if(dialoguePanel.activeInHierarchy)
             {
                 zeroText();
@@ -83,6 +84,7 @@ public class NpcController : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             playerIsClose = false;
+            hint.SetActive(false);
             zeroText();
         }
     }
