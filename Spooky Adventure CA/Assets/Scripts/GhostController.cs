@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class GhostController : MonoBehaviour
 {
-    [SerializeField] int strength;
-    bool isAlive = true;
     [SerializeField] private float distance;
     [SerializeField] private float speed;
     [SerializeField] private string detectionTag = "Player";
     private int direction = 1;
     private float distanceMoved;
     public bool PlayerinArea = false;
-    public bool hit = false;
     private Animator _animator;
     private Rigidbody2D _rigidbody;
     // Start is called before the first frame update
