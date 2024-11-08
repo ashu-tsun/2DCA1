@@ -15,7 +15,8 @@ public class PlayerController : MonoBehaviour
     private int crystalsCollected;
     private bool isAlive = true;
     private Animator _animator;
-
+    private AudioSource source;
+    private bool playing = false;
     [SerializeField] private string detectionTag = "Ghost";
     public GameObject Player;
     public Transform SpawnPoint;
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        source = GetComponent<AudioSource>();
         _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
         totalCrystals = GameObject.FindGameObjectsWithTag("Crystal").Length;
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        source.Pause();
         float moveby =Input.GetAxis("Horizontal");
         Vector2 position = transform.position;
         position.x += speed * moveby *Time.deltaTime;
@@ -41,16 +44,28 @@ public class PlayerController : MonoBehaviour
         if(jumpCount <2 && Input.GetKeyDown(KeyCode.Space))
         {
            Jump();
+           source.Pause();
+           playing = false;
 
         }
 
         if (moveby <0)
         {
             transform.localScale = new Vector3(-1,1,1);
+            if(isGrounded)
+            {
+                source.Play();
+                playing = true;
+            }
         }
         else if (moveby >0)
         {
             transform.localScale = Vector3.one;
+            if(isGrounded)
+            {
+                source.Play();
+                playing = true;
+            }
         }
 
         if(lives<=0)
@@ -71,6 +86,7 @@ public class PlayerController : MonoBehaviour
         _animator.SetTrigger("Jump");
         isGrounded = false;
         jumpCount++;
+        SoundManagerScript.playSound("jump");
     }
 
         private void miniJump()
@@ -78,7 +94,7 @@ public class PlayerController : MonoBehaviour
         _rigidbody.velocity = Vector3.zero;
        
         _rigidbody.AddForce(new Vector2(0, Mathf.Sqrt(-1* Physics2D.gravity.y *JumpHeight)), ForceMode2D.Impulse);
-        _animator.SetTrigger("Jump");
+  
         isGrounded = false;
         jumpCount++;
     }
@@ -107,6 +123,10 @@ public class PlayerController : MonoBehaviour
         {
             isHit = true;
             lives--;
+            if(lives!=0)
+            {
+                SoundManagerScript.playSound("hit");
+            }
             miniJump();
             UIManager.Instance.updateLives(lives);
         }
@@ -133,6 +153,7 @@ public class PlayerController : MonoBehaviour
     {
         isAlive = false;
         _animator.SetBool("Alive",isAlive);
+        SoundManagerScript.playSound("die");
         LevelManager.manager.GameOver();
         Destroy(gameObject);
     }
@@ -140,11 +161,13 @@ public class PlayerController : MonoBehaviour
     public void crystalCollected()
     {
         crystalsCollected++;
+        SoundManagerScript.playSound("collect");
         UIManager.Instance.setCrystalsCollected(crystalsCollected,totalCrystals);
     }
 
     private void Win(){
         LevelManager.manager.WinGame();
+        SoundManagerScript.playSound("win");
         Destroy(gameObject);
     }
 }

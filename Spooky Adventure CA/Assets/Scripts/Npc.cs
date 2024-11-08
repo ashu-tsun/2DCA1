@@ -23,6 +23,7 @@ public class NpcController : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.E) &&playerIsClose == true)
         {
+            SoundManagerScript.playSound("npc");
             hint.SetActive(false);
             if(dialoguePanel.activeInHierarchy)
             {
@@ -59,6 +60,7 @@ public class NpcController : MonoBehaviour
 
     public void NextLine()
     {
+        SoundManagerScript.playSound("npc");
         continueButton.SetActive(false);
         if(index<dialogue.Length -1)
         {
