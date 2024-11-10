@@ -11,6 +11,7 @@ TagManager:
   - Larry
   - NPC
   - WinCollider
+  - attack
   layers:
   - Default
   - TransparentFX
